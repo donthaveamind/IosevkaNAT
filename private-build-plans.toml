@@ -1,0 +1,83 @@
+[buildPlans.IosevkaNat]
+family = "Iosevka NAT"
+spacing = "normal"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = false
+
+  [buildPlans.IosevkaNat.variants]
+  inherits = "ss14"
+
+    [buildPlans.IosevkaNat.variants.design]
+    one = "no-base"
+    two = "curly-neck-serifless"
+    three = "two-arcs"
+    four = "closed-serifless"
+    six = "closed-contour"
+    seven = "curly-serifless"
+    nine = "closed-contour"
+    capital-q = "crossing"
+    capital-r = "straight-serifless"
+    a = "single-storey-earless-corner-tailed"
+    f = "flat-hook-serifless"
+    g = "single-storey-top-cut"
+    i = "hooky"
+    j = "serifless"
+    k = "symmetric-connected-serifless"
+    l = "flat-tailed"
+    p = "eared-serifless"
+    q = "straight-serifless"
+    s = "serifless"
+    t = "flat-hook-asymmetric"
+    u = "toothed-serifless"
+    y = "cursive-serifless"
+    z = "straight-serifless"
+    capital-eszet = "corner-serifless"
+    long-s = "flat-hook-serifless"
+    cyrl-a = "double-storey-tailed"
+    cyrl-ve = "standard-interrupted-serifless"
+    cyrl-capital-u = "cursive-serifless"
+    cyrl-u = "cursive-serifless"
+    asterisk = "penta-mid"
+    underscore = "above-baseline"
+    caret = "high"
+    ascii-grave = "straight"
+    paren = "flat-arc"
+    brace = "straight"
+    number-sign = "upright"
+    ampersand = "closed"
+    at = "threefold"
+    bar = "natural-slope"
+    question = "smooth"
+
+[buildPlans.IosevkaNat.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IosevkaNat.weights.Medium]
+shape = 500
+menu = 500
+css = 500
+
+[buildPlans.IosevkaNat.weights.Bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.IosevkaNat.weights.ExtraBold]
+shape = 800
+menu = 800
+css = 800
+
+[buildPlans.IosevkaNat.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.IosevkaNat.slopes.Italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
