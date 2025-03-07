@@ -1,0 +1,35 @@
+name: build
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  run-on-repo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: current dir
+        run: |
+          echo "$(pwd)"
+          ls
+          
+      - name: install dependencies
+        run: |
+          sudo apt install ttfautohint
+          npm install
+
+      - name: build the font
+        run: |
+          npm run build -- ttf::IosevkaNat
+      - name: upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: compiled-build
+          path: dist/ # Change this if your build output is elsewhere
+          retention-days: 7
