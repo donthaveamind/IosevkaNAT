@@ -38,6 +38,7 @@ exportGlyphNames = false
     cyrl-ve = "standard-interrupted-serifless"
     cyrl-capital-u = "cursive-serifless"
     cyrl-u = "cursive-serifless"
+    tilde = "low"
     asterisk = "penta-mid"
     underscore = "above-baseline"
     caret = "high"
@@ -47,8 +48,10 @@ exportGlyphNames = false
     number-sign = "upright"
     ampersand = "closed"
     at = "threefold"
+    dollar = "open"
     bar = "natural-slope"
     question = "smooth"
+    lig-hyphen-chain = "without-notch"
 
 [buildPlans.IosevkaNat.weights.Regular]
 shape = 400
@@ -65,10 +68,20 @@ shape = 700
 menu = 700
 css = 700
 
-[buildPlans.IosevkaNat.weights.ExtraBold]
-shape = 800
-menu = 800
-css = 800
+[buildPlans.IosevkaNat.widths.Normal]
+shape = 500
+menu = 5
+css = "normal"
+
+[buildPlans.IosevkaNat.widths.Extended]
+shape = 600
+menu = 7
+css = "expanded"
+
+[buildPlans.IosevkaNat.widths.SemiCondensed]
+shape = 456
+menu = 4
+css = "semi-condensed"
 
 [buildPlans.IosevkaNat.slopes.Upright]
 angle = 0
